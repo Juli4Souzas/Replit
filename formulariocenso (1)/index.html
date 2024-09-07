@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <title>Questionário_Censo</title>
+   <link href="style.css" rel="stylesheet" type="text/css" />
+ </head>
+
+ <body>
+   <h1 id="titulo">Censo demográfico 2022</h1>
+   <p id="subtitulo">Questionário básico</p>
+   <br>
+
+   <main class="container">
+        <h2>1.IDENTIFICAÇÃO DO DOMICÍLIO</h2><br>
+        <form action="">
+
+        <div class="campo">
+            <label for="seu"><strong>UF </strong></label>
+            <select id=seu>
+                <option selected disabled value="">Selecione</option>
+                <option>Acre (AC)</option>
+                <option>Alagoas (AL)</option>
+                <option>Amapá (AP)</option>
+                <option>Amazonas (AM)</option>
+                <option>Bahia (BA)</option>
+                <option>Ceará (CE)</option>
+                <option>Espírito Santo (ES)</option>
+                <option>Goiás (GO)</option>
+                <option>Maranhão (MA)</option>
+                <option>Mato Grosso (MT)</option>
+                <option>Mato Grosso do Sul (MS)</option>
+                <option>Minas Gerais (MG)</option>
+                <option>Pará (PA)</option>
+                <option>Paraíba (PB)</option>
+                <option>Paraná (PR)</option>
+                <option>Pernambuco (PE)</option>
+                <option>Piauí (PI)</option>
+                <option>Rio de Janeiro (RJ)</option>
+                <option>Rio Grande do Norte (RN)</option>
+                <option>Rio Grande do Sul (RS)</option>
+                <option>Rondônia (RO)</option>
+                <option>Roraima (RR)</option>
+                <option>Santa Catarina (SC)</option>
+                <option>São Paulo (SP)</option>
+                <option>Sergipe (SE)</option>
+                <option>Tocantins (TO)</option>
+                <option>Distrito Federal</option>
+            </select>
+        </div>
+
+          <fieldset class="grupo">
+            <div class="campo">
+               <label for="nome"><strong>MUNICÍPIO
+               </strong></label>
+               <input type="text" name="nome" id="nome" required>
+            </div>
+        </fieldset>
+
+          
+          
+         <div>
+            <label><strong>ESPÉCIE DE DOMICÍLIO OCUPADO</strong></label><br>
+           
+    <input type = "radio" id = "domicilio" name = "domicilio" value = "particular1">
+    <label for = "domicilio"> Domicílio particular permanente ocupado</ label><br>
+           
+    <input type = "radio" id = "domicilio" name = "domicilio" value="partiular2">
+    <label for = "domicilio"> domicílio particular improvisado ocupado</ label><br>
+           
+    <input type = "radio" id = "domicilio" name = "domicilio" value = "coletivo">
+    <label for = "domicilio"> Domicílio coletivo com morador</ label><br>
+  </div><br>
+
+          <div >
+           <label><strong>TIPO </strong></label> <br>
+           
+    <input type = "radio" id = "tipo" name = "tipo" value = "tipo1">
+    <label for = "tipo"> Casa </ label><br>
+           
+    <input type = "radio" id = "tipo" name = "tipo" value="tipo2">
+    <label for = "tipo"> Apartamento</ label><br>
+           
+    <input type = "radio" id = "tipo" name = "tipo" value = "tipo3">
+    <label for = "tipo"> Alojamento</ label><br>
+
+    <input type = "radio" id = "tipo" name = "tipo" value = "tipo4">
+    <label for = "tipo"> Outro</ label><br>        
+  </div><br><br>
+
+          <table > 
+            <tr>
+          <td><h2>2. INFORMAÇÕES SOBRE MORADORES</h2> </td><td>(PARA DOMICÍLIOS PARTICULARES E COLETIVOS)</td>
+              </tr>
+           </table><br><br>
+
+          <div class="campo" >
+            <label for="quantas_pessoa">QUANTAS PESSOAS MORAVAM NESTE DOMICÍLIO
+EM 31 DE JULHO DE 2022?</label>
+            <input type="number" id="quantas_pessoas"  name="quantas_pessoas" >
+            
+          </div>
+
+          <div class="campo" >
+            <label for="quantas_pessoa">QUANTAS CRIANÇAS DE ZERO A NOVE ANOS DE IDADE,
+INCLUSIVE RECÉM-NASCIDOS, MORAVAM NESTE DOMICÍLIO
+EM 31 DE JULHO DE 2022?</label>
+            <input type="number" id="quantas_pessoas"  name="quantas_pessoas" >
+            
+          </div><br>
+
+         <h3> LISTA DE MORADORES EM 31 DE JULHO DE 2022</h3><br>
+           <fieldset class="grupo">
+            <div class="campo">
+               <label for="nome"><strong>NOME DO MORADOR:</strong></label>
+               <input type="text" name="nome" id="nome" required>
+            </div>
+            <div class="campo">
+                <label for="sobrenome"><strong>SOBRENOME DO MORADOR: </strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset><br>
+
+          <div class="campo">
+            <label><strong>Sexo</strong></label>
+            <label><br>
+                <input type="radio" name="devweb" value="frontend">Feminino<br>
+            </label><br>
+            <label>
+                <input type="radio" name="devweb" value="backend">Masculino
+            </label>
+        </div><br>
+
+          <div class="campo">
+             <label for = "data"> <strong>QUAL É A DATA DE NASCIMENTO? </strong></ label><br>
+            <input type = "date" id = "data" name = "data">
+    
+          </div><br><br>
+
+          <div>
+            <h3>QUAL É A RELAÇÃO DE PARENTESCO OU DE CONVIVÊNCIA COM A PESSOA RESPONSÁVEL PELO DOMICÍLIO?</h3><br>
+
+            <input type = "radio" id = "parentesco" name = "parentesco" value = "Filho">
+    <label for = "parentesco"> Filho(a) somente do responsável </ label><br>
+           
+    <input type = "radio" id = "parentesco" name = "parentesco" value="responsável">
+    <label for = "parentesco">  Pessoa responsável pelo domicílio </ label><br>
+           
+    <input type = "radio" id = "parentesco" name = "parentesco" value = "pai/mãe">
+    <label for = "parentesco"> Pai, mãe, padrasto ou madrasta</ label><br>
+
+    <input type = "radio" id = "parentesco" name = "parentesco" value = "neto">
+    <label for = "parentesco"> Neto(a)</ label><br>   
+            
+            <input type = "radio" id = "parentesco" name = "parentesco" value = "sogro">
+    <label for = "parentesco"> Sogro(a)</ label><br>   
+            
+            <input type = "radio" id = "parentesco" name = "parentesco" value = "genro/nora">
+    <label for = "parentesco"> Genro ou nora</ label><br>   
+
+            <input type = "radio" id = "parentesco" name = "parentesco" value = "outro">
+    <label for = "parentesco"> Outro</ label><br> 
+  </div><br><br>
+
+          
+
+          <div class="campo">
+            <h2>3. CARACTERÍSTICAS DO DOMICÍLIO</h2>
+            PARA DOMICÍLIOS PARTICULARES PERMANENTES E DOMICÍLIOS IMPROVISADOS DOS TIPOS 052 E 505 (QUESITO 1.12)<br><br>
+            <label for="agua"><strong>QUAL A PRINCIPAL FORMA DE ABASTECIMENTO DE
+ÁGUA UTILIZADA NESTE DOMICÍLIO? </strong></label>
+            <select id=agua>
+               <option selected disabled value="">Selecione</option>
+              <option>1-REDE GERAL DE DISTRIBUIÇÃO</option>
+              <option> 2 - PROFUNDO OU ARTESIANO</option>
+              <option>3 - RASO, FREÁTICO OU CACIMBA</option>
+              <option>4 - FONTE, NASCENTE OU MINA</option>
+              <option>5 - CARRO-PIPA</option>
+              <option>6 - ÁGUA DA CHUVA ARMAZENADA</option>
+              <option>7 - RIOS, AÇUDES, CÓRREGOS, LAGOS E IGARAPÉS</option>
+              <option>8 - OUTRA</option>
+            </select>
+          </div><br>
+
+          <div class="campo">
+            <label><strong>O DOMICÍLIO TEM ACESSO À REDE GERAL DE DISTRIBUIÇÃO
+DE ÁGUA?</strong></label><br>
+            <label>
+                <input type="radio" name="agua" value="frontend">Sim
+            </label><br>
+            <label>
+                <input type="radio" name="agua" value="backend">Não
+            </label>
+        </div><br><br>
+
+          <div class="campo">
+            <label for="agua"><strong>A ÁGUA UTILIZADA NO DOMICÍLIO CHEGA: </strong></label>
+            <select id=agua>
+               <option selected disabled value="">Selecione</option>
+              <option>1 - ENCANADA ATÉ DENTRO DA CASA, APARTAMENTO OU HABITAÇÃO</option>
+              <option> 2 - ENCANADA, MAS APENAS NO TERRENO</option>
+              <option>3 - NÃO CHEGA ENCANADA</option>
+            </select>
+          </div><br><br>
+          
+
+          <div class="campo">
+            <label for="quantas_pessoa"><strong>QUANTOS BANHEIROS DE USO EXCLUSIVO, COM CHUVEIRO E
+LOCALIZADOS NO TERRENO?</strong></label>
+            <input type="number" id="quantas_pessoas"  name="quantas_pessoas" >
+          </div><br><br>
+             
+          <div class="campo">
+            <label><strong>UTILIZA BANHEIRO DE USO COMUM A MAIS DE UM DOMICÍLIO, COM
+CHUVEIRO E VASO SANITÁRIO, INCLUSIVE OS LOCALIZADOS NO TERRENO?</strong></label><br>
+            <label>
+                <input type="radio" name="1" value="frontend">Sim
+            </label><br>
+            <label>
+                <input type="radio" name="1" value="backend">Não
+            </label>
+        </div><br><br>
+
+          <div class="campo">
+            <label><strong>UTILIZA SANITÁRIO OU BURACO PARA DEJEÇÕES, INCLUSIVE
+OS LOCALIZADOS NO TERRENO?</strong></label><br>
+            <label>
+                <input type="radio" name="2" value="frontend">Sim
+            </label><br>
+            <label>
+                <input type="radio" name="2" value="backend">Não
+            </label>
+        </div><br><br>
+
+          <div class="campo">
+            <label for="agua"><strong>PARA ONDE VAI O ESGOTO DO BANHEIRO? </strong></label>
+            <select id=agua>
+               <option selected disabled value="">Selecione</option>
+              <option>1 - REDE GERAL OU PLUVIAL</option>
+              <option>2 - LIGADA À REDE</option>
+              <option>3 - NÃO LIGADA À REDE</option>
+              <option>4 - FOSSA RUDIMENTAR OU BURACO</option>
+              <option>5 - VALA</option>
+              <option>6 - RIO, LAGO, CÓRREGO OU MAR</option>
+              <option>7 - OUTRA FORMA</option>
+            </select>
+          </div><br><br>
+
+          <div class="campo">
+            <label for="agua"><strong>PARA ONDE VAI O ESGOTO DO SANITÁRIO OU BURACO
+PARA DEJEÇÕES? </strong></label>
+            <select id=agua>
+               <option selected disabled value="">Selecione</option>
+              <option>1 - REDE GERAL OU PLUVIAL</option>
+              <option>2 - LIGADA À REDE</option>
+              <option>3 - NÃO LIGADA À REDE</option>
+              <option>4 - FOSSA RUDIMENTAR OU BURACO</option>
+              <option>5 - VALA</option>
+              <option>6 - RIO, LAGO, CÓRREGO OU MAR</option>
+              <option>7 - OUTRA FORMA</option>
+            </select>
+          </div><br><br>
+
+          <div class="campo">
+            <label for="agua"><strong>O LIXO DESTE DOMICÍLIO É: </strong></label>
+            <select id=agua>
+               <option selected disabled value="">Selecione</option>
+              <option>1 - COLETADO NO DOMICÍLIO POR SERVIÇO DE LIMPEZA</option>
+              <option>2 - DEPOSITADO EM CAÇAMBA DE SERVIÇO DE LIMPEZA</option>
+              <option>3 - QUEIMADO NA PROPRIEDADE</option>
+              <option>4 - ENTERRADO NA PROPRIEDADE</option>
+              <option>5 - JOGADO EM TERRENO BALDIO, ENCOSTA OU ÁREA PÚBLICA</option>
+              <option>6 - OUTRO DESTINO</option>
+            </select>
+          </div><br><br>
+
+          
+
+        
+        <table  width="100%">
+          <tr><td>
+           <button class="botao" type="botao">concluído</button></td>
+           <td><button class="botao" type="reset">Limpar</button></td></tr>
+       </table>
+        
+        <br><br><br>
+
+
+    </form>
+ </main>
+
+  
+   
+
+  
+  
+  
+  
+    
+</body>
+
+</html>
